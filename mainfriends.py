@@ -52,10 +52,10 @@ if command:
         with st.chat_message("BOT"):
             st.write("dei pp...poda bumda")
             st.session_state.message.append({"role":"BOT","message":"dei pp...poda bumda"}) 
-    elif "Vaichu" in command:
+    elif "Jothilakshmi" in command:
         with st.chat_message("BOT"):
-            st.write("hi da...nalla irukia...")
-            st.session_state.message.append({"role":"BOT","message":"hi da...nalla irukia..."})     
+            st.write("hi mam...nalla irukingala?...")
+            st.session_state.message.append({"role":"BOT","message":"hi mam...nalla irukingala?..."})     
     elif "Vaishnavi" in command:
         with st.chat_message("BOT"):
             st.write("i said you to type your name da")
