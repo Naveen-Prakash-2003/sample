@@ -32,23 +32,7 @@ if command:
         with st.chat_message("BOT"):
             st.write("Hello..Give me your informations to know your eligible government schemes")
             st.session_state.message.append({"role":"BOT","message":"Hello..Give me your informations to know your eligible government schemes"})
-    elif "hello" in command:
-        with st.chat_message("BOT"):
-            st.write("Hello..Give me your informations to know your eligible government schemes")
-            st.session_state.message.append({"role":"BOT","message":"Hello..Give me your informations to know your eligible government schemes"})  
     elif "Hi" in command:
-        with st.chat_message("BOT"):
-            st.write("Hello..Give me your informations to know your eligible government schemes")
-            st.session_state.message.append({"role":"BOT","message":"Hello..Give me your informations to know your eligible government schemes"}) 
-    elif "hi" in command:
-        with st.chat_message("BOT"):
-            st.write("Hello..Give me your informations to know your eligible government schemes")
-            st.session_state.message.append({"role":"BOT","message":"Hello..Give me your informations to know your eligible government schemes"})
-    elif "Hey" in command:
-        with st.chat_message("BOT"):
-            st.write("Hello..Give me your informations to know your eligible government schemes")
-            st.session_state.message.append({"role":"BOT","message":"Hello..Give me your informations to know your eligible government schemes"}) 
-    elif "hey" in command:
         with st.chat_message("BOT"):
             st.write("Hello..Give me your informations to know your eligible government schemes")
             st.session_state.message.append({"role":"BOT","message":"Hello..Give me your informations to know your eligible government schemes"}) 
