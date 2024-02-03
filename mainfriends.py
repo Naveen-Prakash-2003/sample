@@ -28,11 +28,11 @@ if command:
     with st.chat_message("USER"):
         st.write(command)
         st.session_state.message.append({"role":"USER","message":command})
-    if ["Hello","Hi","Hey","hello","hi","hey"] in command:
+    if "Hello" in command:
         with st.chat_message("BOT"):
             st.write("Hello..Give me your informations to know your eligible government schemes")
             st.session_state.message.append({"role":"BOT","message":"Hello..Give me your informations to know your eligible government schemes"})
-    elif ["Who","who"] in command:
+    elif "Who" in command:
         with st.chat_message("BOT"):
             st.write("Im an AI Assistant and my job is to guide you towards government schemes which are eligible for you")
             st.session_state.message.append({"role":"BOT","message":"Im an AI Assistant and my job is to guide you towards government schemes which are eligible for you"})                                                
