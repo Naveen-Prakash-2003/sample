@@ -32,10 +32,35 @@ if command:
         with st.chat_message("BOT"):
             st.write("Hello..Give me your informations to know your eligible government schemes")
             st.session_state.message.append({"role":"BOT","message":"Hello..Give me your informations to know your eligible government schemes"})
+    elif "hello" in command:
+        with st.chat_message("BOT"):
+            st.write("Hello..Give me your informations to know your eligible government schemes")
+            st.session_state.message.append({"role":"BOT","message":"Hello..Give me your informations to know your eligible government schemes"})  
+    elif "Hi" in command:
+        with st.chat_message("BOT"):
+            st.write("Hello..Give me your informations to know your eligible government schemes")
+            st.session_state.message.append({"role":"BOT","message":"Hello..Give me your informations to know your eligible government schemes"}) 
+    elif "hi" in command:
+        with st.chat_message("BOT"):
+            st.write("Hello..Give me your informations to know your eligible government schemes")
+            st.session_state.message.append({"role":"BOT","message":"Hello..Give me your informations to know your eligible government schemes"})
+    elif "Hey" in command:
+        with st.chat_message("BOT"):
+            st.write("Hello..Give me your informations to know your eligible government schemes")
+            st.session_state.message.append({"role":"BOT","message":"Hello..Give me your informations to know your eligible government schemes"}) 
+    elif "hey" in command:
+        with st.chat_message("BOT"):
+            st.write("Hello..Give me your informations to know your eligible government schemes")
+            st.session_state.message.append({"role":"BOT","message":"Hello..Give me your informations to know your eligible government schemes"}) 
     elif "Who" in command:
         with st.chat_message("BOT"):
             st.write("Im an AI Assistant and my job is to guide you towards government schemes which are eligible for you")
-            st.session_state.message.append({"role":"BOT","message":"Im an AI Assistant and my job is to guide you towards government schemes which are eligible for you"})                                                
+            st.session_state.message.append({"role":"BOT","message":"Im an AI Assistant and my job is to guide you towards government schemes which are eligible for you"})
+    elif "who" in command:
+        with st.chat_message("BOT"):
+            st.write("Im an AI Assistant and my job is to guide you towards government schemes which are eligible for you")
+            st.session_state.message.append({"role":"BOT","message":"Im an AI Assistant and my job is to guide you towards government schemes which are eligible for you"})
+   
     else:
         with st.chat_message("BOT"):
             data = ai(command)
