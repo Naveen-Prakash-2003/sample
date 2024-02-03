@@ -12,9 +12,9 @@ def ai(txt):
     return response.text
 
 
-st.title("Ai Assistant")
+st.title("Government Schemes Assistant")
 
-command = st.chat_input("how can I help you?")
+command = st.chat_input("How Can I Help You..")
 
 if "message" not in st.session_state:
     st.session_state.message = []
@@ -28,57 +28,19 @@ if command:
     with st.chat_message("USER"):
         st.write(command)
         st.session_state.message.append({"role":"USER","message":command})
-    if "Hello" in command:
+    if ["Hello","Hi","Hey","hello","hi","hey"] in command:
         with st.chat_message("BOT"):
-            st.write("Hi Dude")
-            st.session_state.message.append({"role":"BOT","message":"Hi Dude"})
-    elif "Who" in command:
+            st.write("Hello..Give me your informations to know your eligible government schemes")
+            st.session_state.message.append({"role":"BOT","message":"Hello..Give me your informations to know your eligible government schemes"})
+    elif ["Who","who"] in command:
         with st.chat_message("BOT"):
-            st.write("Im Naveen's AI Assistant")
-            st.session_state.message.append({"role":"BOT","message":"Im Naveen's AI Assistant"})
-    elif "Aswin" in command:
-        with st.chat_message("BOT"):
-            st.write("vanakam")
-            st.session_state.message.append({"role":"BOT","message":"vanakam"}) 
-    elif "Akash" in command:
-        with st.chat_message("BOT"):
-            st.write("ombaaa...vandu ombu")
-            st.session_state.message.append({"role":"BOT","message":"ombaaa...vandu ombu"})  
-    elif "Ragesh" in command:
-        with st.chat_message("BOT"):
-            st.write("kavya purusan....welcome")
-            st.session_state.message.append({"role":"BOT","message":"kavya purusan....welcome"}) 
-    elif "Gopinath" in command:
-        with st.chat_message("BOT"):
-            st.write("dei pp...poda bumda")
-            st.session_state.message.append({"role":"BOT","message":"dei pp...poda bumda"}) 
-    elif "Jothilakshmi" in command:
-        with st.chat_message("BOT"):
-            st.write("hi mam...nalla irukingala?...")
-            st.session_state.message.append({"role":"BOT","message":"hi mam...nalla irukingala?..."})     
-    elif "Vaishnavi" in command:
-        with st.chat_message("BOT"):
-            st.write("i said you to type your name da")
-            st.session_state.message.append({"role":"BOT","message":"i said you to type your name da"})
-    elif "Saron" in command:
-        with st.chat_message("BOT"):
-            st.write("celebrity bro...ninga la")
-            st.session_state.message.append({"role":"BOT","message":"celebrity bro...ninga la"})  
-    elif "Shalu" in command:
-        with st.chat_message("BOT"):
-            st.write("po t nayae")
-            st.session_state.message.append({"role":"BOT","message":"po t nayae"})      
-    elif "Monik" in command:
-        with st.chat_message("BOT"):
-            st.write("grow up soon..lets have fun")
-            st.session_state.message.append({"role":"BOT","message":"grow up soon..lets have fun"})                                                 
+            st.write("Im an AI Assistant and my job is to guide you towards government schemes which are eligible for you")
+            st.session_state.message.append({"role":"BOT","message":"Im an AI Assistant and my job is to guide you towards government schemes which are eligible for you"})                                                
     else:
         with st.chat_message("BOT"):
             data = ai(command)
             st.write(data)
             st.session_state.message.append({"role":"BOT","message":data})
-
-
 
 
 print(st.session_state.message)
