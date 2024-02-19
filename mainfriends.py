@@ -8,7 +8,7 @@ def ai(txt):
         if 'generateContent' in m.supported_generation_methods:
             print(m.name)
     model = genai.GenerativeModel('gemini-pro')
-    response = model.generate_content("from now you are a chatbot that can provide reliable and relevant information about various government schemes to the citizens, and help them identify their eligibility criteria"+txt)
+    response = model.generate_content("from now you are a chatbot that can provide reliable and relevant information about various government schemes to the citizens, and help them identify their eligibility criteria.At first you need to ask their name then age,income then ask their caste,religion,income and give them the eligible government schemes"+txt)
     return response.text
 
 
